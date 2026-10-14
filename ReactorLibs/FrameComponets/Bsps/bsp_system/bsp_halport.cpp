@@ -19,6 +19,7 @@ namespace Hardware
     BSP::UART::UartID huart_other = nullptr;
     BSP::UART::UartID huart_log = nullptr;   
     BSP::UART::UartID huart_optical = nullptr;  
+    BSP::UART::UartID huart_sick = nullptr;  
 
     /**-----    配置SPI总线    -----**/
     BSP::SPI::SpiID spi_main_bus = nullptr;
