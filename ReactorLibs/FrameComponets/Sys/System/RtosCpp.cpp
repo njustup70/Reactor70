@@ -11,7 +11,7 @@
 #include "motor_dji.hpp"
 #include "System.hpp"
 #include "RtosCpp.hpp"
-#include "Chassis.hpp"
+// #include "Chassis.hpp"   // 暂时不作为系统库内容
 #include "Monitor.hpp"
 
 /* ================= 任务句柄定义 ================= */
