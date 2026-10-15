@@ -1,7 +1,5 @@
 CompileFlags:
   CompilationDatabase: build/Debug
-  Compiler: "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/arm-none-eabi-gcc.exe"
-
   Add:
     - "--target=arm-none-eabi"
   Remove:
@@ -13,38 +11,6 @@ CompileFlags:
 
 Index:
   Background: Build
-
----
-If:
-  PathMatch: [.*\.cpp, .*\.cc, .*\.cxx]
-CompileFlags:
-  Compiler: "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/arm-none-eabi-g++.exe"
-  Add:
-    - "-std=gnu++17"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1/arm-none-eabi"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1/backward"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/lib/gcc/arm-none-eabi/13.3.1/include"
-
----
-If:
-  PathMatch: [.*\.hpp, .*\.hh, .*\.hxx]
-CompileFlags:
-  Compiler: "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/arm-none-eabi-g++.exe"
-  Add:
-    - "-std=gnu++17"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1/arm-none-eabi"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1/backward"
-    - "-isystem"
-    - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/lib/gcc/arm-none-eabi/13.3.1/include"
 
 ---
 Diagnostics:

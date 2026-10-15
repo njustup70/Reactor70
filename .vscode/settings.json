@@ -26,7 +26,7 @@
     "C_Cpp.intelliSenseEngine": "disabled",
     "clangd.arguments": [
         "--compile-commands-dir=build/Debug",
-        "--query-driver=C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/*/bin/arm-none-eabi-gcc*,C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/*/bin/arm-none-eabi-g++*",
+        "--query-driver=**/arm-none-eabi-*",
         "--all-scopes-completion",
         "--completion-style=detailed",
         "--header-insertion=never",
