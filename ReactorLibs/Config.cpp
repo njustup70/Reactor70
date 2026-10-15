@@ -38,9 +38,10 @@ void Hardware::Config_Hardwares()
  */
 void Hardware::Config_Parameters()
 {
-    /// @brief 配置主频
-    Hardware::MainFreq_MHz = 168;
+    /// @brief 配置主频                                                          
+    Hardware::MainFreq_MHz = 180;
 
     /// @brief 日志输出模式
     Hardware::RTTLogAtUart = true;
+    Hardware::RTTLogUartItrp = true;    // 否则默认是dma，但是cube里串口7没有配置dma，于是会引发空指针解引用的问题，进入HardFault
 }
